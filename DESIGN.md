@@ -27,3 +27,6 @@ Imagem original gerada pela ferramenta integrada ImageGen: assets/partida-visao-
 
 ## Vídeo real na hero
 A pedido do usuário, a imagem em movimento foi substituída por vídeo real de treino, de Tim Grimbergen/Pexels, visto por trás do gol. Origem e licença em source-reference/video-hero.md. MP4 de cerca de 3 MB, mudo e em loop; carrega apenas quando a hero entra em vista. Pausa em segundo plano e fora da hero, e usa poster estático com movimento reduzido, economia de dados ou falha de reprodução. Vídeo de IA não foi gerado: o plano conectado do Runway não oferece geração de vídeo.
+
+## Retorno ao cenário digital
+Vídeo e imagem de futebol removidos da hero. Fundo escuro restaurado com grade digital em perspectiva, halo azul e varredura de luz discreta dentro do semicírculo. Telas aproximadas com sobreposição suave: margem horizontal negativa, mantendo a central maior, laterais médias e pontas menores. Preferência por movimento reduzido respeitada.

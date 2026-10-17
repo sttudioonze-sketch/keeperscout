@@ -28,37 +28,3 @@ if (presentation && videoStart) {
   presentation.addEventListener('pause', () => {label.textContent = 'Assistir ao vídeo'; icon.textContent = '▶';});
   presentation.addEventListener('ended', () => {label.textContent = 'Assistir novamente'; icon.textContent = '▶';});
 }
-
-// A imagem permanece visível se o usuário economiza dados, reduz movimento ou o vídeo falha.
-const heroMatch = document.querySelector('.hero-match-video');
-if (heroMatch) {
-  const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
-  const connection = navigator.connection;
-  let inView = false;
-  let sourceLoaded = false;
-  const syncMatch = () => {
-    if (!inView || document.hidden || motionPreference.matches || connection?.saveData) {
-      heroMatch.pause();
-      if (motionPreference.matches || connection?.saveData) heroMatch.classList.remove('is-playing');
-      return;
-    }
-    if (!sourceLoaded) {
-      heroMatch.querySelector('source').src = heroMatch.querySelector('source').dataset.src;
-      heroMatch.muted = true;
-      heroMatch.load();
-      sourceLoaded = true;
-    }
-    heroMatch.play().catch(() => heroMatch.classList.remove('is-playing'));
-  };
-  heroMatch.addEventListener('playing', () => heroMatch.classList.add('is-playing'));
-  heroMatch.addEventListener('error', () => heroMatch.classList.remove('is-playing'));
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(entries => {
-      inView = entries[0].isIntersecting;
-      syncMatch();
-    }, {threshold:0.05}).observe(document.querySelector('.tech-hero'));
-  } else {inView = true; syncMatch();}
-  document.addEventListener('visibilitychange', syncMatch);
-  motionPreference.addEventListener('change', syncMatch);
-  connection?.addEventListener('change', syncMatch);
-}
