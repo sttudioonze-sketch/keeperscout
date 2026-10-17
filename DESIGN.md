@@ -30,3 +30,6 @@ A pedido do usuário, a imagem em movimento foi substituída por vídeo real de 
 
 ## Retorno ao cenário digital
 Vídeo e imagem de futebol removidos da hero. Fundo escuro restaurado com grade digital em perspectiva, halo azul e varredura de luz discreta dentro do semicírculo. Telas aproximadas com sobreposição suave: margem horizontal negativa, mantendo a central maior, laterais médias e pontas menores. Preferência por movimento reduzido respeitada.
+
+## Retrato e benefícios
+Retrato de Thiago substituído pela foto enviada pelo usuário em 17/10/2026, preservada em assets/thiago-mehl-retrato.jpeg e apresentada em formato vertical 4:5. Imagem lateral dos benefícios removida. Os cinco textos aprovados foram distribuídos em grade: Histórico Técnico Completo ocupa o destaque à esquerda; os quatro demais benefícios em duas colunas à direita, com ícones específicos. CTA abaixo da grade. Layout adaptado em duas colunas para tablet e uma no celular.
