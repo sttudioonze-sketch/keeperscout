@@ -24,3 +24,6 @@ Os aparelhos reais flutuam diretamente sobre o fundo, sem painéis de vidro, ró
 
 ## Partida dentro do semicírculo
 Imagem original gerada pela ferramenta integrada ImageGen: assets/partida-visao-goleiro.png. Cena noturna de partida vista de dentro do gol, integrada apenas à área do semicírculo com recorte elíptico, sombras e transição para o preto. Movimento lento de câmera aplicado à imagem; não se trata de vídeo de uma partida real. Pausa fora da área visível e respeita movimento reduzido. Prompt integral em source-reference/prompt-partida-goleiro.md.
+
+## Vídeo real na hero
+A pedido do usuário, a imagem em movimento foi substituída por vídeo real de treino, de Tim Grimbergen/Pexels, visto por trás do gol. Origem e licença em source-reference/video-hero.md. MP4 de cerca de 3 MB, mudo e em loop; carrega apenas quando a hero entra em vista. Pausa em segundo plano e fora da hero, e usa poster estático com movimento reduzido, economia de dados ou falha de reprodução. Vídeo de IA não foi gerado: o plano conectado do Runway não oferece geração de vídeo.

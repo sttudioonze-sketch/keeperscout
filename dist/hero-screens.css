@@ -55,3 +55,9 @@
 @keyframes stadium-drift{from{transform:scale(1.02) translateX(-.4%)}to{transform:scale(1.055) translateX(.4%)}}
 @media(max-width:760px){.tech-hero .orbit::before{background-position:center -85px;filter:brightness(.8) saturate(.72)}.tech-hero .orbit::after{background:linear-gradient(180deg,#03040510,#03040533 24%,#0304059e 48%,#030405 76%)}}
 @media(prefers-reduced-motion:reduce){.tech-hero .orbit::before{animation:none!important;transform:none}}
+/* Vídeo de treino atrás do gol, com poster estático de reserva. */
+.hero-match-video{position:absolute;top:-130px;left:0;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;pointer-events:none;z-index:-2;filter:brightness(.58) saturate(.52);opacity:0;transition:opacity 1s}
+.hero-match-video.is-playing{opacity:1}
+.tech-hero .orbit:has(.hero-match-video)::before{background-image:url('assets/treino-visao-gol-poster.jpg');filter:brightness(.58) saturate(.52);animation:none;opacity:1}
+@media(max-width:760px){.hero-match-video{top:-85px;filter:brightness(.62) saturate(.52)}.tech-hero .orbit:has(.hero-match-video)::before{filter:brightness(.62) saturate(.52)}}
+@media(prefers-reduced-motion:reduce){.hero-match-video{display:none}}
