@@ -48,3 +48,10 @@ Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de
 - A seção “O problema não é analisar.” recebeu uma goleira vetorial própria: rede em três planos, traves prateadas e luz discreta no piso. Centro escuro para preservar a leitura; no mobile a goleira fica abaixo do texto.
 - Nome Keeper Scout da hero com gradiente de prata e reflexo de luz em ciclos de nove segundos. Pausa fora da hero e desativa para movimento reduzido. Conteúdo decorativo sem duplicação no leitor de tela.
 - Composição revisada no navegador a 390 e 1440 px; conteúdo aprovado preservado.
+
+## Correção da imagem e traves — 17/10/2026
+- Arte do fluxo com altura automática e proporção quadrada preservada, eliminando distorção ao reduzir a largura. Conferida a 1250 e 390 px; no celular renderiza 327 × 327 px, sem overflow.
+- Traves frontais ampliadas de 3 para 7 unidades no SVG, com luz proporcional.
+- README e instruções de hospedagem estática adicionados para entrega no GitHub.
+
+- Logo original do Keeper Scout destacado também na seção de download, acima da chamada e dos links oficiais das lojas.
