@@ -36,3 +36,10 @@ Retrato de Thiago substituído pela foto enviada pelo usuário em 17/10/2026, pr
 
 ## Fundo: trama de informação
 Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de trajetórias curvas, cruzamentos em camadas, pulsos percorrendo rotas e seis junções pontuais. Paleta de prata fria, azul acinzentado e reflexos sálvia discretos. Grade anterior e feixe central removidos. Área dos títulos preservada escura. SVG nativo e animação de traços, sem imagens de banco, dados fictícios, canvas pesado ou bibliotecas adicionais. Movimentos pausam quando a hero sai da área visível e respeitam movimento reduzido.
+
+## Mobile e luz central — 17/10/2026
+- Luz radial azul-prateada atrás do aparelho central, com pulsação lenta. Respeita redução de movimento e pausa fora da hero.
+- Menu nativo para celular/tablet, botões principais com área de toque de 44–48 px, hero de altura fluida e tipografia mais legível.
+- Imagens responsivas WebP para telas, retrato e fluxo. O conjunto de telas em 1600 px passou de 7.341.572 para 570.448 bytes (92,2% menor); originais permanecem disponíveis no zoom.
+- Verificação no navegador nas larguras 320, 360, 390, 430, 768, 1024 e 1440 px: sem overflow horizontal, texto cortado ou sobreposição entre texto e telas da hero. Menu/âncoras, ampliação e FAQ conferidos a 390 px. Sem imagens quebradas.
+- Testes por viewport no navegador; não representa validação em cada aparelho físico ou motor de navegador.

@@ -28,3 +28,15 @@ if (presentation && videoStart) {
   presentation.addEventListener('pause', () => {label.textContent = 'Assistir ao vídeo'; icon.textContent = '▶';});
   presentation.addEventListener('ended', () => {label.textContent = 'Assistir novamente'; icon.textContent = '▶';});
 }
+
+const mobileNav = document.querySelector('.mobile-nav');
+if (mobileNav) {
+  mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileNav.removeAttribute('open')));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && mobileNav.open) {
+      mobileNav.removeAttribute('open');
+      mobileNav.querySelector('summary').focus();
+    }
+  });
+  document.addEventListener('click', event => {if (mobileNav.open && !mobileNav.contains(event.target)) mobileNav.removeAttribute('open');});
+}
