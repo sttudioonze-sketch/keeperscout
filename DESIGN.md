@@ -21,3 +21,6 @@ A marca Keeper Scout recebe tipografia de destaque, acima da chamada original. O
 
 ## Hero sem molduras externas
 Os aparelhos reais flutuam diretamente sobre o fundo, sem painéis de vidro, rótulos externos ou reflexos retangulares. Hierarquia de escala: central 540px; laterais 420px; pontas 300px. Preserva a disposição em leque, as inclinações e a luz do cenário. No celular, central 460px e laterais 335px, sem overflow horizontal da página.
+
+## Partida dentro do semicírculo
+Imagem original gerada pela ferramenta integrada ImageGen: assets/partida-visao-goleiro.png. Cena noturna de partida vista de dentro do gol, integrada apenas à área do semicírculo com recorte elíptico, sombras e transição para o preto. Movimento lento de câmera aplicado à imagem; não se trata de vídeo de uma partida real. Pausa fora da área visível e respeita movimento reduzido. Prompt integral em source-reference/prompt-partida-goleiro.md.
