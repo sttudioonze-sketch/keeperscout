@@ -42,3 +42,11 @@
  .tech-hero .demo-caption{margin-top:20px;text-align:center}
  .hero-core-light{bottom:40px;height:440px}
 }
+/* Uma medida de CTA em toda a página, limitada apenas pelo espaço do card. */
+@media(max-width:760px){
+ main .button:not(.small),.tech-hero .hero-actions .button,.approved-steps>.button,.video-invitation .video-start,.support-band .button,.approved-pricing .button{display:flex;align-items:center;justify-content:center;width:100%;max-width:360px;min-height:52px;height:auto;box-sizing:border-box;padding:15px 20px;gap:12px;font-family:inherit;font-size:13px;font-weight:600;line-height:1.4;text-align:center;margin-inline:auto}
+ .video-start .video-button-label{font-size:13px;line-height:1.4}
+ .approved-store-links{width:100%;max-width:360px}
+ .approved-store-links a{width:100%;box-sizing:border-box;min-height:76px}
+}
+@media(max-width:760px){main .button:not(.small),.tech-hero .hero-actions .button,.approved-steps>.button,.video-invitation .video-start,.support-band .button,.approved-pricing .button{height:52px;padding-block:13px}.button>span[aria-hidden="true"]{line-height:1}}
