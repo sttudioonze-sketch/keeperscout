@@ -55,3 +55,8 @@ Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de
 - README e instruções de hospedagem estática adicionados para entrega no GitHub.
 
 - Logo original do Keeper Scout destacado também na seção de download, acima da chamada e dos links oficiais das lojas.
+
+## Termos de uso internos — 17/10/2026
+- Página `termos-de-uso.html` com texto integral do documento original, incluindo 11 cláusulas, política de privacidade e aviso LGPD. Data original preservada: 27 de maio de 2026.
+- Acesso pelo menu desktop/mobile e rodapé; navegação entre as três partes e retorno ao site.
+- Comparação automática confirmou os 50 blocos extraídos da página original, sem reescrita jurídica.
