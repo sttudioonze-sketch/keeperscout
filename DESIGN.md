@@ -33,3 +33,6 @@ Vídeo e imagem de futebol removidos da hero. Fundo escuro restaurado com grade 
 
 ## Retrato e benefícios
 Retrato de Thiago substituído pela foto enviada pelo usuário em 17/10/2026, preservada em assets/thiago-mehl-retrato.jpeg e apresentada em formato vertical 4:5. Imagem lateral dos benefícios removida. Os cinco textos aprovados foram distribuídos em grade: Histórico Técnico Completo ocupa o destaque à esquerda; os quatro demais benefícios em duas colunas à direita, com ícones específicos. CTA abaixo da grade. Layout adaptado em duas colunas para tablet e uma no celular.
+
+## Fundo: trama de informação
+Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de trajetórias curvas, cruzamentos em camadas, pulsos percorrendo rotas e seis junções pontuais. Paleta de prata fria, azul acinzentado e reflexos sálvia discretos. Grade anterior e feixe central removidos. Área dos títulos preservada escura. SVG nativo e animação de traços, sem imagens de banco, dados fictícios, canvas pesado ou bibliotecas adicionais. Movimentos pausam quando a hero sai da área visível e respeitam movimento reduzido.
