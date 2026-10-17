@@ -1,22 +1,21 @@
 /* Telas reais em perspectiva e perfil de Thiago Mehl. */
-.tech-hero{padding-top:134px;height:1050px}
+.tech-hero{padding-top:134px;height:1120px}
 .hero-app-name{font-family:Arial,Helvetica,sans-serif;font-size:clamp(62px,7.1vw,94px);font-weight:400;line-height:1.05;letter-spacing:-.075em;margin:0 0 24px;background:linear-gradient(115deg,#8291a5 3%,#f5f8ff 43%,#bac8db 65%,#68778e 95%);background-clip:text;-webkit-background-clip:text;color:transparent;filter:drop-shadow(0 0 35px #abc8ed20)}
 .tech-hero h1{font-size:clamp(31px,3.5vw,47px);letter-spacing:-.055em;line-height:1.13;margin-bottom:22px;background:linear-gradient(110deg,#9299a4,#eef2f8 50%,#8895a8)}
 .tech-hero h1{background-clip:text;-webkit-background-clip:text;color:transparent}
 .tech-hero .lead{max-width:565px;font-size:13px;margin-bottom:25px}
-.hero-panels.real-screens{top:555px;width:1170px;height:435px;display:flex;align-items:flex-start;justify-content:center;gap:20px;perspective:1300px}
-.hero-screen{position:relative;padding:43px 0 10px;flex-shrink:0;border-radius:23px;display:flex;align-items:center;justify-content:center;overflow:hidden;transform-origin:center center;background:radial-gradient(ellipse at 50% 110%,#6489bf3d,transparent 63%),linear-gradient(140deg,#d2e6ff17,#1b273b65 55%,#bdcfff0c);box-shadow:inset 0 1px 1px #ffffff55,0 0 60px #8cb5f50a,0 30px 60px #0009;border-color:#c1d9ff32}
-.hero-screen>img{height:100%;width:auto;max-width:none;object-fit:contain;display:block;position:relative;z-index:1;filter:drop-shadow(0 14px 15px #0009)}
-.hero-screen-label{position:absolute;top:18px;left:0;right:0;text-align:center;font-size:10px;color:#bdcde4;letter-spacing:-.1px}
-.screen-center{width:260px;height:435px;z-index:3;background:radial-gradient(ellipse at 50% 120%,#779fda55,transparent 65%),linear-gradient(135deg,#e6f1ff20,#91aaca08 55%,#a5c8ff18);border-color:#e1edff60;box-shadow:inset 0 1px 1px #ffffff6b,0 0 85px #a6c6ff1d,0 30px 80px #0008}
-.screen-near-left,.screen-near-right{width:225px;height:390px;margin-top:32px;z-index:2}
-.screen-near-left{transform:rotate(-8deg) rotateY(15deg)}
-.screen-near-right{transform:rotate(8deg) rotateY(-15deg)}
-.screen-far-left,.screen-far-right{width:190px;height:340px;margin-top:80px;opacity:.7}
-.screen-far-left{transform:rotate(-15deg) rotateY(24deg);margin-right:-5px}
-.screen-far-right{transform:rotate(15deg) rotateY(-24deg);margin-left:-5px}
-.screen-glint{position:absolute;inset:0;background:linear-gradient(110deg,transparent 10%,#dcecff08 33%,#dcecff02 35%,transparent 54%);z-index:2;pointer-events:none}
-.hero-screen.screen-center::after{content:"";position:absolute;width:65%;height:1px;bottom:0;left:17.5%;background:linear-gradient(90deg,transparent,#e8f3ff,transparent);box-shadow:0 0 20px 3px #a6cdff44}
+.hero-panels.real-screens{top:530px;width:1080px;height:540px;display:flex;align-items:flex-start;justify-content:center;gap:18px;perspective:1300px}
+.hero-screen{position:relative;padding:0;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:visible;transform-origin:center center;background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;animation:glass-float 8s ease-in-out infinite;animation-play-state:paused}
+.tech-hero.effects-active .hero-screen{animation-play-state:running}
+.hero-screen>img{height:100%;width:auto;max-width:none;object-fit:contain;display:block;position:relative;filter:drop-shadow(0 20px 22px #000b) drop-shadow(0 0 14px #a7cfff0d);pointer-events:none}
+.screen-center{width:270px;height:540px;z-index:3}
+.screen-center>img{filter:drop-shadow(0 26px 28px #000c) drop-shadow(0 0 22px #adcfff22)}
+.screen-near-left,.screen-near-right{width:210px;height:420px;margin-top:60px;z-index:2}
+.screen-near-left{transform:rotate(-9deg) rotateY(15deg)}
+.screen-near-right{transform:rotate(9deg) rotateY(-15deg)}
+.screen-far-left,.screen-far-right{width:150px;height:300px;margin-top:120px;opacity:.82}
+.screen-far-left{transform:rotate(-17deg) rotateY(22deg);margin-right:0}
+.screen-far-right{transform:rotate(17deg) rotateY(-22deg);margin-left:0}
 .real-screens .hero-screen:nth-child(2n){animation-delay:-3s;animation-duration:8s}
 .real-screens .hero-screen:nth-child(2n+1){animation-delay:-1s;animation-duration:9s}
 .tech-hero .demo-caption{bottom:23px;font-size:10px;color:#7b8ba1}
@@ -45,6 +44,6 @@
 .career-path{padding-top:20px;margin-top:24px;border-top:1px solid #c4dcff1c}
 .career-path>span{font-size:10px;color:#6f86a5}.career-path p{font-size:11px;color:#aab8cc;line-height:1.9;margin-top:10px;margin-bottom:17px}
 .bio-source{font-size:11px;color:#8bafd8;display:inline-flex;gap:12px;align-items:center}.bio-source:hover{color:#d6e8ff;text-decoration:underline;text-underline-offset:4px}
-@media(max-width:1100px){.hero-panels.real-screens{width:1050px;gap:13px}.screen-center{width:245px}.screen-near-left,.screen-near-right{width:215px}.screen-far-left,.screen-far-right{width:165px}.tag-left,.tag-right{display:none}.thiago-layout{gap:40px}.thiago-bio .bio-intro{font-size:21px}.header nav{gap:19px}}
-@media(max-width:760px){.tech-hero{padding-top:132px;height:980px}.hero-app-name{font-size:59px;line-height:1.08;letter-spacing:-4px;margin-bottom:22px}.tech-hero h1{font-size:27px;line-height:1.18;letter-spacing:-1.4px;margin-bottom:22px}.tech-hero .lead{font-size:12px;max-width:325px}.tech-hero .hero-actions{gap:8px}.tech-hero .hero-actions .button{font-size:9px;padding:13px 11px;gap:7px}.hero-panels.real-screens{top:555px;width:650px;height:365px;gap:13px}.real-screens .screen-far-left,.real-screens .screen-far-right{display:none}.screen-center{width:220px;height:365px;padding-top:41px}.screen-near-left,.screen-near-right{width:195px;height:330px;margin-top:29px;padding-top:41px}.hero-screen-label{font-size:8px;top:17px}.hero-screen{border-radius:19px}.tech-hero .demo-caption{font-size:9px;bottom:24px}.tech-hero .orbit{top:510px}.tech-hero .beam{height:950px}.video-invitation{display:block;padding:24px 20px;margin-bottom:18px}.video-invitation h3{font-size:24px;letter-spacing:-.9px}.video-invitation p{font-size:12px}.video-invitation .video-start{margin-top:22px;width:100%;padding:16px}.video-showcase .original-video{border-radius:12px}.thiago-section{padding-block:55px}.thiago-layout{grid-template-columns:1fr;gap:38px}.thiago-portrait{max-width:350px;justify-self:center;width:100%}.portrait-signature{font-size:15px}.thiago-bio h2{font-size:52px}.thiago-bio .bio-intro{font-size:23px}.thiago-bio>p:not(.bio-intro):not(.section-note){font-size:13px}.career-path p{font-size:11px}}
-@media(max-width:370px){.hero-app-name{font-size:52px}.tech-hero h1{font-size:25px}.tech-hero .hero-actions .button{font-size:8px}.hero-panels.real-screens{top:570px}}
+@media(max-width:1100px){.hero-panels.real-screens{width:960px;gap:10px}.screen-center{width:250px}.screen-near-left,.screen-near-right{width:195px}.screen-far-left,.screen-far-right{width:130px}.tag-left,.tag-right{display:none}.thiago-layout{gap:40px}.thiago-bio .bio-intro{font-size:21px}.header nav{gap:19px}}
+@media(max-width:760px){.tech-hero{padding-top:132px;height:1050px}.hero-app-name{font-size:59px;line-height:1.08;letter-spacing:-4px;margin-bottom:22px}.tech-hero h1{font-size:27px;line-height:1.18;letter-spacing:-1.4px;margin-bottom:22px}.tech-hero .lead{font-size:12px;max-width:325px}.tech-hero .hero-actions{gap:8px}.tech-hero .hero-actions .button{font-size:9px;padding:13px 11px;gap:7px}.hero-panels.real-screens{top:525px;width:575px;height:460px;gap:4px}.real-screens .screen-far-left,.real-screens .screen-far-right{display:none}.screen-center{width:225px;height:460px}.screen-near-left,.screen-near-right{width:165px;height:335px;margin-top:63px}.hero-screen{border-radius:0}.tech-hero .demo-caption{font-size:9px;bottom:24px}.tech-hero .orbit{top:510px}.tech-hero .beam{height:950px}.video-invitation{display:block;padding:24px 20px;margin-bottom:18px}.video-invitation h3{font-size:24px;letter-spacing:-.9px}.video-invitation p{font-size:12px}.video-invitation .video-start{margin-top:22px;width:100%;padding:16px}.video-showcase .original-video{border-radius:12px}.thiago-section{padding-block:55px}.thiago-layout{grid-template-columns:1fr;gap:38px}.thiago-portrait{max-width:350px;justify-self:center;width:100%}.portrait-signature{font-size:15px}.thiago-bio h2{font-size:52px}.thiago-bio .bio-intro{font-size:23px}.thiago-bio>p:not(.bio-intro):not(.section-note){font-size:13px}.career-path p{font-size:11px}}
+@media(max-width:370px){.hero-app-name{font-size:52px}.tech-hero h1{font-size:25px}.tech-hero .hero-actions .button{font-size:8px}.hero-panels.real-screens{top:545px}}

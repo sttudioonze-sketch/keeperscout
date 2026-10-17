@@ -18,3 +18,6 @@ Camada visual em effects.css/effects.js: superfícies translúcidas com blur, sa
 
 ## Hero com telas reais, vídeo e Thiago Mehl
 A marca Keeper Scout recebe tipografia de destaque, acima da chamada original. Os painéis conceituais deram lugar a cinco telas reais, distribuídas em perspectiva e com acabamento glass; três permanecem em foco no celular. A apresentação em vídeo ocupa a largura central e tem chamada própria e botão para iniciar/pausar. A foto original de Thiago Mehl foi deslocada para seção própria antes da oferta, com biografia resumida e fonte: https://www.totalfut.com.br/curso-cruzamentos-no-futebol.html (consultada em 17/10/2026). Dados usados: licença A CBF, instrutor CBF Academy, Educação Física pela Universidade Positivo, passagens por clubes e seleções de base entre 2011–2018, metodologia que integra aspectos físicos/técnicos/táticos e tomada de decisão. Evita apresentar o clube atual sem necessidade.
+
+## Hero sem molduras externas
+Os aparelhos reais flutuam diretamente sobre o fundo, sem painéis de vidro, rótulos externos ou reflexos retangulares. Hierarquia de escala: central 540px; laterais 420px; pontas 300px. Preserva a disposição em leque, as inclinações e a luz do cenário. No celular, central 460px e laterais 335px, sem overflow horizontal da página.
