@@ -43,3 +43,8 @@ Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de
 - Imagens responsivas WebP para telas, retrato e fluxo. O conjunto de telas em 1600 px passou de 7.341.572 para 570.448 bytes (92,2% menor); originais permanecem disponíveis no zoom.
 - Verificação no navegador nas larguras 320, 360, 390, 430, 768, 1024 e 1440 px: sem overflow horizontal, texto cortado ou sobreposição entre texto e telas da hero. Menu/âncoras, ampliação e FAQ conferidos a 390 px. Sem imagens quebradas.
 - Testes por viewport no navegador; não representa validação em cada aparelho físico ou motor de navegador.
+
+## Goleira e prata polida — 17/10/2026
+- A seção “O problema não é analisar.” recebeu uma goleira vetorial própria: rede em três planos, traves prateadas e luz discreta no piso. Centro escuro para preservar a leitura; no mobile a goleira fica abaixo do texto.
+- Nome Keeper Scout da hero com gradiente de prata e reflexo de luz em ciclos de nove segundos. Pausa fora da hero e desativa para movimento reduzido. Conteúdo decorativo sem duplicação no leitor de tela.
+- Composição revisada no navegador a 390 e 1440 px; conteúdo aprovado preservado.

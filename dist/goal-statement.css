@@ -1,0 +1,25 @@
+/* A goleira enquadra a mensagem; o centro fica livre para leitura. */
+.goal-statement{position:relative;isolation:isolate;overflow:hidden;display:grid;place-items:center;min-height:540px;padding:145px 0 115px;background:#060909}
+.goal-scenery{position:absolute;inset:0;z-index:-2;pointer-events:none;display:grid;place-items:center}
+.goal-scenery img{width:min(1200px,112vw);max-width:none;height:auto;opacity:.82}
+.goal-statement::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 36% 29% at 50% 51%,#060909fa 0%,#060909d9 52%,#06090926 100%)}
+.goal-statement::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(#060909 0%,transparent 24%,transparent 76%,#060909 100%)}
+.goal-statement .wrap{position:relative;max-width:850px}
+.goal-statement h2{font-size:clamp(35px,4vw,50px);line-height:1.15;margin-bottom:24px;letter-spacing:-.045em;color:#e0e7ed;text-wrap:balance}
+.goal-statement p{max-width:680px;font-size:18px;line-height:1.7;color:#abb8c1;text-wrap:pretty}
+@media(max-width:760px){
+ .goal-statement{min-height:470px;padding:70px 0 175px}
+ .goal-statement .wrap{padding-inline:26px}
+ .goal-statement h2{font-size:35px;max-width:340px;margin-bottom:22px}
+ .goal-statement p{font-size:15px;line-height:1.75;max-width:360px}
+ .goal-scenery{align-items:end}
+ .goal-scenery img{width:112%;margin-bottom:-8px;opacity:.9}
+ .goal-statement::before{background:linear-gradient(#060909 0%,#060909ed 22%,#0609099c 50%,transparent 78%)}
+}
+/* Prata polida com reflexo estreito e pausas longas. */
+.hero-app-name{color:#d9e3ed;background:linear-gradient(116deg,#8c9aab 0%,#d4dce6 18%,#f7fbff 30%,#a0afbf 43%,#f0f6fc 58%,#a2afbf 77%,#dce5ed 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative;isolation:isolate}
+.hero-app-name::after{content:attr(data-metal-text) / "";position:absolute;inset:0;color:transparent;pointer-events:none;background:linear-gradient(110deg,transparent 42%,#effaff33 46%,#fff 49%,#f5fcffbd 50.5%,transparent 55%);background-size:300% 100%;background-position:100% 50%;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:keeper-metal-reflection 9s cubic-bezier(.4,0,.2,1) infinite;animation-play-state:paused}
+.tech-hero.effects-active .hero-app-name::after{animation-play-state:running}
+@keyframes keeper-metal-reflection{0%,12%{background-position:100% 50%;opacity:0}17%{opacity:.9}48%{background-position:0% 50%;opacity:.9}53%,100%{background-position:0% 50%;opacity:0}}
+@media(prefers-reduced-motion:reduce){.hero-app-name::after{animation:none;opacity:0}}
+@media(forced-colors:active){.hero-app-name{background:none;color:CanvasText;-webkit-text-fill-color:CanvasText}.hero-app-name::after{display:none}}
