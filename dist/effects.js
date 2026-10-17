@@ -16,7 +16,7 @@
 
   if (!reduced.matches) {
     document.documentElement.classList.add('motion-ready');
-    ['.hero-copy .intro', '.hero-copy h1', '.hero-copy .lead', '.hero-actions'].forEach((selector, index) => {
+    ['.hero-app-name', '.hero-copy h1', '.hero-copy .lead', '.hero-actions'].forEach((selector, index) => {
       enter(document.querySelector(selector), 100 + index * 120, index === 1 ? 28 : 18);
     });
     enter(document.querySelector('.hero-panels'), 480, 42);
@@ -30,7 +30,7 @@
         reveal.unobserve(entry.target);
       });
     }, {threshold: 0.08, rootMargin: '0px 0px -25px 0px'});
-    document.querySelectorAll('.center-heading, .overview-media, .overview-pillars article, .question-band .wrap, .workflow-art, .approved-steps article, .resource-card, .approved-statement .wrap, .benefits-list article, .benefits-art, .price-box, .download-inner > div, .support-band, .approved-faq > div').forEach(element => reveal.observe(element));
+    document.querySelectorAll('.center-heading, .overview-media, .overview-pillars article, .question-band .wrap, .workflow-art, .approved-steps article, .resource-card, .approved-statement .wrap, .benefits-list article, .benefits-art, .price-box, .download-inner > div, .support-band, .approved-faq > div, .thiago-portrait, .thiago-bio').forEach(element => reveal.observe(element));
     const visibility = new IntersectionObserver(entries => {
       entries.forEach(entry => hero.classList.toggle('effects-active', entry.isIntersecting && !reduced.matches));
     });
