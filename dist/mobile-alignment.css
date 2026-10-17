@@ -1,0 +1,44 @@
+/* Hierarquia centralizada para a leitura e o toque no celular. */
+@media(max-width:760px){
+ main h2,main h3{text-align:center;margin-inline:auto;text-wrap:balance}
+ .center-heading,.video-invitation,.overview-pillars article,.question-band,.approved-steps,.resource-copy,.benefits-list article,.thiago-bio,.download-inner,.support-band{text-align:center}
+ .section-note{justify-content:center;max-width:100%;text-align:center}
+ .button,.section-action,.bio-source{justify-content:center}
+ .section-action{text-align:center}
+ .overview-pillars p,.question-band p,.resource-copy p,.benefits-list p,.benefits-list article:first-child p,.video-invitation p,.thiago-bio .bio-intro{margin-inline:auto;text-align:center}
+ .approved-steps article{display:grid;grid-template-columns:1fr;justify-items:center;gap:13px}
+ .approved-steps .step-index{margin:0;display:grid;place-items:center}
+ .approved-steps article>div{min-width:0}
+ .approved-steps p{max-width:370px;margin-inline:auto;text-align:center}
+ .approved-steps>.button{margin-inline:auto}
+ .workflow-art,.original-video,.thiago-portrait{margin-inline:auto}
+ .benefits-list article,.benefits-list article:first-child{align-items:center;justify-items:center}
+ .benefits-list h3,.benefits-list p,.benefits-list article:first-child h3,.benefits-list article:first-child p{max-width:100%}
+ .benefits-list .benefit-mark{margin-inline:auto}
+ .portrait-signature{text-align:center}
+ .thiago-credentials{justify-content:center}
+ .thiago-bio>p:not(.bio-intro):not(.section-note){text-align:justify;hyphens:auto}
+ .career-path p{text-align:center}
+ .download-brand{margin-inline:auto}
+ .download-inner>div:first-child{margin-inline:auto}
+ .approved-store-links{max-width:380px;margin-inline:auto}
+ .approved-store-links a{justify-content:center;text-align:center;gap:14px}
+ .approved-store-links b{margin-left:0}
+ .support-band .button{margin-inline:auto}
+ .approved-faq .questions,.questions summary,.questions p,.faq-answer li{text-align:left}
+ .footer{flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:17px}
+ .footer .brand{margin-inline:auto}
+ .footer>p{margin:0;text-align:center;max-width:none}
+ .footer>div{margin:0;justify-content:center;flex-direction:column;text-align:center;gap:9px}
+ .footer>div>a{justify-content:center}
+ /* Três aparelhos inteiros: centro maior e laterais proporcionais à largura. */
+ .hero-panels.real-screens{display:block;width:calc(100% - 32px);max-width:480px;height:clamp(255px,78vw,370px);margin-top:38px;left:auto;transform:none;margin-inline:auto;perspective:1100px}
+ .real-screens .hero-screen{position:absolute;margin:0;top:0}
+ .real-screens .screen-center{width:44%;height:100%;left:28%;z-index:3}
+ .real-screens .screen-near-left,.real-screens .screen-near-right{width:28%;height:73%;top:18%;margin:0;z-index:2}
+ .real-screens .screen-near-left{left:0;transform:rotate(-4deg) rotateY(10deg)}
+ .real-screens .screen-near-right{right:0;transform:rotate(4deg) rotateY(-10deg)}
+ .real-screens .hero-screen>img{height:100%;width:auto;max-width:none;object-fit:contain}
+ .tech-hero .demo-caption{margin-top:20px;text-align:center}
+ .hero-core-light{bottom:40px;height:440px}
+}
