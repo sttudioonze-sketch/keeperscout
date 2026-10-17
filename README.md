@@ -21,3 +21,9 @@ Abra http://localhost:4173.
 - `.openai/hosting.json`: configuração da publicação existente no Sites.
 
 Para outros serviços de hospedagem, use `dist` como pasta pública. Não há backend, variáveis de ambiente ou etapa de build.
+
+## Vercel
+
+O arquivo `vercel.json` define `dist` como pasta pública e habilita URLs sem `.html`, incluindo `/termos-de-uso`.
+
+Importe o repositório usando a raiz do projeto, com o preset **Other**. Não é necessária etapa de build. Com a integração Git conectada, novos pushes em `main` atualizam a produção.
