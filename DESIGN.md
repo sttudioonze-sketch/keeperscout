@@ -66,3 +66,7 @@ Hero redesenhada como uma trama de fibras de informação, com dois conjuntos de
 - Hero com três telas inteiras, em dimensões proporcionais à viewport. A central permanece maior, com duas laterais menores.
 - Conferido no navegador a 320, 360, 390, 430 e 760 px, sem overflow horizontal. Desktop preservado e conferido a 1024 px.
 - CTAs mobile padronizados: largura 100% até 360 px, altura mínima de 52 px, fonte 13 px, preenchimento de 15 × 20 px e alinhamento central. Cabeçalho compacto e links das lojas mantêm medidas próprias de suas funções.
+
+## Ajuste de 27/10/2026 — goleira mobile e assinatura
+
+No mobile, a goleira abre a seção Visão e enquadra o título; o texto de apoio fica abaixo. Assinatura e download passam a compartilhar a seção `#plano`, com `#baixar` preservado como destino interno. Preços e destinos originais mantidos; o CTA de assinatura continua levando às opções de instalação, pois não há URL externa de checkout configurada no código original. Desktop usa duas colunas; mobile empilha oferta e downloads.

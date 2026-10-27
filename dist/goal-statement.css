@@ -4,17 +4,21 @@
 .goal-scenery img{width:min(1200px,112vw);max-width:none;height:auto;opacity:.82}
 .goal-statement::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 36% 29% at 50% 51%,#060909fa 0%,#060909d9 52%,#06090926 100%)}
 .goal-statement::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(#060909 0%,transparent 24%,transparent 76%,#060909 100%)}
+.goal-frame{display:contents}
 .goal-statement .wrap{position:relative;max-width:850px}
+.goal-statement .goal-description{padding-inline:26px;margin:0 auto}
 .goal-statement h2{font-size:clamp(35px,4vw,50px);line-height:1.15;margin-bottom:24px;letter-spacing:-.045em;color:#e0e7ed;text-wrap:balance}
 .goal-statement p{max-width:680px;font-size:18px;line-height:1.7;color:#abb8c1;text-wrap:pretty}
 @media(max-width:760px){
- .goal-statement{min-height:470px;padding:70px 0 175px}
- .goal-statement .wrap{padding-inline:26px}
- .goal-statement h2{font-size:35px;max-width:340px;margin-bottom:22px}
- .goal-statement p{font-size:15px;line-height:1.75;max-width:360px}
- .goal-scenery{align-items:end}
- .goal-scenery img{width:112%;margin-bottom:-8px;opacity:.9}
- .goal-statement::before{background:linear-gradient(#060909 0%,#060909ed 22%,#0609099c 50%,transparent 78%)}
+ .goal-statement{display:block;min-height:0;padding:24px 0 48px}
+ .goal-frame{display:block;position:relative;width:100%;aspect-ratio:5/3}
+ .goal-frame .wrap{display:contents}
+ .goal-statement h2{position:absolute;z-index:1;top:66.5%;left:50%;transform:translate(-50%,-50%);width:66%;max-width:310px;margin:0;font-size:clamp(21px,6vw,30px);line-height:1.15;text-align:center;text-wrap:balance;text-shadow:0 2px 16px #060909}
+ .goal-statement .goal-description{max-width:410px;margin:10px auto 0;font-size:15px;line-height:1.75;text-align:center}
+ .goal-scenery{position:absolute;inset:0;z-index:0;display:block;overflow:visible}
+ .goal-scenery img{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120%;height:auto;margin:0;opacity:.95}
+ .goal-statement::before{display:none}
+ .goal-statement::after{background:linear-gradient(#060909 0%,transparent 12%,transparent 88%,#060909 100%)}
 }
 /* Prata polida com reflexo estreito e pausas longas. */
 .hero-app-name{color:#d9e3ed;background:linear-gradient(116deg,#8c9aab 0%,#d4dce6 18%,#f7fbff 30%,#a0afbf 43%,#f0f6fc 58%,#a2afbf 77%,#dce5ed 100%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;position:relative;isolation:isolate}
